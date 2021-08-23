@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+p{
+    color:white;
+}
+h1{
+    font-size: 36px;
+}
+input{
+    background-color: #05CBE9;
+    color:#111D4A;
+    font-size: 20px;
+    font-weight:bold;
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.container{
+    width:70%;
+    margin:0 auto;
+    background-color: #111D4A;
+    color:#05CBE9;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.container>div{
+    padding:3px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "a . . b"
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.a{
+    grid-area:a;
+}
+.b{
+    grid-area:b;
+}
+
+
+@media screen and (max-width:700px){
+    body{
+        font-size:16px;
+    }
+    h1{
+        font-size:28px;
+    }
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height:150px;
+    }
+}
